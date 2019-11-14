@@ -35,7 +35,7 @@ RUN             apt-get -y update
 RUN             apt-get -y install curl
 RUN             apt-get -y install software-properties-common
 
-# 2. sanacoin release lastest download
+# 2. solbit release lastest download
 RUN             mkdir /root/solbit && cd /root/solbit && curl -L https://github.com/SolbitManager/Solbit-new/releases/download/v1.3.0.0/solbit-1.3.0.0-arm-linux-gnu-ubuntu.18.0.4.tar.gz
 RUN             mkdir /root/.solbit && cd /root/solbit &&  mv solbit.conf /root/.solbit/ && chmod 755 solbit*
 RUN             cd /root/solbit && chmod 755 solbit*
@@ -52,7 +52,7 @@ RUN             apt-get install -y libssl1.0-dev
 RUN             apt-get install -y libminiupnpc-dev
 RUN             apt-get install -y libzmq5
 
-# 3. run sanacoin daemon
+# 3. run solbit daemon
 RUN             cd /root/solbit && ./solbitd -txindex -daemon
 ```
 
