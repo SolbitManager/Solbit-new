@@ -46,6 +46,6 @@ RUN             apt-get install -y libzmq5
 
 
 
-# 3. run sanacoin daemon
+# 3. run solbit daemon
 
 RUN             cd /root/solbit && ./solbitd -txindex -daemon
