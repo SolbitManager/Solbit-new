@@ -60,9 +60,9 @@ RUN             cd /root/solbit && ./solbitd -txindex -daemon
 > Reference 2.1
 
 **2.3. Code sample for address generation (private key and derived address)**
-> sanacoin-cli getnewaddress "account"  
+> solbit-cli getnewaddress "account"  
 > or  
-> sanacoin-cli getaddressesbyaccount "account"  
+> solbit-cli getaddressesbyaccount "account"  
 > [ Not use private key or derived address ]
 
 
